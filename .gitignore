@@ -47,3 +47,13 @@ next-env.d.ts
 
 # Local temp files
 temp/
+.amazonq/
+.augment/
+.claude/
+.codex/
+.continue/
+.cursor/
+.gemini/
+.github/
+.opencode/
+.windsurf/
