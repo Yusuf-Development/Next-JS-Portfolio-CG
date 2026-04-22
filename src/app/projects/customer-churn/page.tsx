@@ -235,11 +235,10 @@ export default function CustomerChurnPage() {
                         </span>
                         <div className="flex-1">
                           <div
-                            className={`h-8 rounded ${m.winner ? "ring-2 ring-offset-1" : ""}`}
+                            className={`h-8 rounded ${m.winner ? "ring-2 ring-offset-1 ring-[rgb(0,95,158)]" : ""}`}
                             style={{
                               width: `${((m.auc - 0.7) / 0.3) * 100}%`,
                               backgroundColor: m.color,
-                              ringColor: m.winner ? "rgb(0,95,158)" : undefined,
                             }}
                           />
                         </div>
