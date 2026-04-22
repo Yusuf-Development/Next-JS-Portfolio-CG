@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="326" height="424" viewBox="0 0 326 424">
+  <rect width="326" height="424" fill="#ffffff"/>
+  <rect width="326" height="70" fill="#005F9E"/>
+  <text x="20" y="35" font-family="Arial,sans-serif" font-size="22" font-weight="bold" fill="#ffffff">YUSUF MUSA</text>
+  <text x="20" y="55" font-family="Arial,sans-serif" font-size="12" fill="#ffffff">AI/ML Engineer &amp; Data Scientist</text>
+
+  <text x="20" y="100" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#005F9E">EXPERIENCE</text>
+  <line x1="20" y1="106" x2="306" y2="106" stroke="#333333" stroke-width="1"/>
+  <text x="20" y="122" font-family="Arial,sans-serif" font-size="10" fill="#555555">Senior Data Scientist — TechCorp</text>
+  <text x="20" y="136" font-family="Arial,sans-serif" font-size="10" fill="#555555">2022 – Present</text>
+  <text x="20" y="158" font-family="Arial,sans-serif" font-size="10" fill="#555555">ML Engineer — DataLab Inc.</text>
+  <text x="20" y="172" font-family="Arial,sans-serif" font-size="10" fill="#555555">2019 – 2022</text>
+
+  <text x="20" y="205" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#005F9E">SKILLS</text>
+  <line x1="20" y1="211" x2="306" y2="211" stroke="#333333" stroke-width="1"/>
+  <text x="20" y="227" font-family="Arial,sans-serif" font-size="10" fill="#555555">Python, R, SQL, TensorFlow, PyTorch</text>
+  <text x="20" y="241" font-family="Arial,sans-serif" font-size="10" fill="#555555">Machine Learning, Deep Learning, NLP</text>
+  <text x="20" y="255" font-family="Arial,sans-serif" font-size="10" fill="#555555">Data Visualization, Tableau, Power BI</text>
+  <text x="20" y="269" font-family="Arial,sans-serif" font-size="10" fill="#555555">Statistical Analysis, A/B Testing</text>
+
+  <text x="20" y="300" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#005F9E">EDUCATION</text>
+  <line x1="20" y1="306" x2="306" y2="306" stroke="#333333" stroke-width="1"/>
+  <text x="20" y="322" font-family="Arial,sans-serif" font-size="10" fill="#555555">M.S. Computer Science — Stanford University</text>
+  <text x="20" y="336" font-family="Arial,sans-serif" font-size="10" fill="#555555">B.S. Mathematics — UC Berkeley</text>
+
+  <text x="20" y="370" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#005F9E">PROJECTS</text>
+  <line x1="20" y1="376" x2="306" y2="376" stroke="#333333" stroke-width="1"/>
+  <text x="20" y="392" font-family="Arial,sans-serif" font-size="10" fill="#555555">Customer Churn Prediction Model</text>
+  <text x="20" y="406" font-family="Arial,sans-serif" font-size="10" fill="#555555">Rice Variety Classification (Deep Learning)</text>
+  <text x="20" y="420" font-family="Arial,sans-serif" font-size="10" fill="#555555">Headline A/B Test Analysis</text>
+</svg>

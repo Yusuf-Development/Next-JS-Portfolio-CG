@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351 172" role="img" aria-label="Yusuf Musa">
+  <defs>
+    
+  </defs>
+  <g fill="#ffffff">
+    <path fill-rule="evenodd" d="M77 54 H128 V105 H77 Z M87 64 V95 H118 V64 Z"></path>
+    <path fill-rule="evenodd" d="M57 74 H108 V126 H57 Z M67 84 V116 H98 V84 Z"></path>
+    <rect x="87" y="84" width="11" height="11"></rect>
+  </g>
+  <g fill="#ffffff">
+    <text x="147" y="87" font-size="34">YUSUF</text>
+    <text x="147" y="122" font-size="34">MUSA</text>
+  </g>
+</svg>
