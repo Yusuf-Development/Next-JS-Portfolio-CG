@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Lock } from "lucide-react";
+import { FileDown } from "lucide-react";
 
 export function QuarterlyResults() {
   return (
@@ -31,12 +31,13 @@ export function QuarterlyResults() {
               </h3>
               <div className="mt-2">
                 <a
-                  href="/resume.pdf"
-                  download
+                  href="/images/yusuf_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 border border-white px-6 py-3 text-xs font-normal uppercase tracking-[1.5px] text-white no-underline transition-colors hover:bg-white/10"
                 >
                   Download full resume
-                  <Lock className="h-4 w-4" />
+                  <FileDown className="h-4 w-4" />
                 </a>
               </div>
             </div>

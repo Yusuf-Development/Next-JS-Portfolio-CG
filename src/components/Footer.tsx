@@ -5,7 +5,7 @@ const bottomLinks = [
   { label: "Email", href: "mailto:amyusuf.it@gmail.com" },
   { label: "GitHub", href: "https://github.com/ayusuf9" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/yusuf9/" },
-  { label: "Download CV", href: "/resume.pdf", isDownload: true },
+  { label: "Download CV", href: "/images/yusuf_resume.pdf", isDownload: true },
 ];
 
 export function Footer({ className }: { className?: string }) {

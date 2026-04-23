@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Home Page | Capital Group",
+  title: "Yusuf",
   description:
-    "Welcome to Capital Group, home of American Funds.",
+    "AI/ML Engineer and Data Scientist",
 };
 
 export default function RootLayout({

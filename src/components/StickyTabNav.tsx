@@ -41,6 +41,14 @@ export function StickyTabNav() {
     const onScroll = () => {
       if (isClickScrolling.current) return;
 
+      // If scrolled to bottom, activate the last section
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.body.scrollHeight - 50;
+      if (atBottom) {
+        setActiveId(tabs[tabs.length - 1].target);
+        return;
+      }
+
       const offset = 100; // account for sticky bar height + margin
       let current = tabs[0].target;
 
@@ -101,7 +109,7 @@ export function StickyTabNav() {
               role="tab"
               aria-selected={isActive}
               onClick={() => handleClick(tab.target)}
-              className={`flex flex-1 cursor-pointer items-center justify-center border-none text-[23px] transition-colors duration-200 ${
+              className={`flex flex-1 cursor-pointer items-center justify-center border-none text-[20px] transition-colors duration-200 ${
                 isActive
                   ? "bg-cg-ocean font-bold text-white"
                   : "bg-transparent font-normal text-cg-black hover:bg-black/5"
