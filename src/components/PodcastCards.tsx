@@ -82,9 +82,9 @@ export function PodcastCards() {
           </div>
 
           {/* Text column */}
-          <div className="flex flex-col justify-center gap-4 px-8 py-12">
+          <div className="flex flex-col justify-center gap-4 px-5 py-8 md:px-8 md:py-12">
             <h3
-              className="m-0 text-[36px] font-normal leading-snug"
+              className="m-0 text-[24px] md:text-[36px] font-normal leading-snug"
               style={{ color: "rgb(0, 0, 0)" }}
             >
               {card.title}
@@ -99,7 +99,7 @@ export function PodcastCards() {
                   href={btn.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border-2 px-6 py-3.5 text-[14px] font-semibold uppercase tracking-[0.5px] no-underline hover:bg-[rgb(0,58,102)] hover:text-white"
+                  className="inline-flex items-center gap-2 border-2 px-4 py-3 md:px-6 md:py-3.5 text-[13px] md:text-[14px] font-semibold uppercase tracking-[0.5px] no-underline hover:bg-[rgb(0,58,102)] hover:text-white"
                   style={{
                     borderColor: "rgb(0, 58, 102)",
                     color: "rgb(0, 58, 102)",

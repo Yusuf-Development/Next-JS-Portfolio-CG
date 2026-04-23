@@ -18,7 +18,7 @@ export function TimeTestedSection() {
   return (
     <section className="w-full bg-[#F1F1F1] py-16">
       <div className="mx-auto max-w-[1280px] px-6">
-        <h2 className="mb-4 text-center text-[36px] font-normal text-cg-black">
+        <h2 className="mb-4 text-center text-[26px] md:text-[36px] font-normal text-cg-black">
           Skills built through real-world experience
         </h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-lg text-cg-black">
@@ -26,7 +26,7 @@ export function TimeTestedSection() {
           analytics — reflected in the tools I reach for every day.
         </p>
 
-        <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-12 md:grid-cols-2">
+        <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-8 md:gap-12 md:grid-cols-2">
           {/* Languages & Data */}
           <div>
             <h3 className="mb-4 text-2xl font-bold text-cg-black">

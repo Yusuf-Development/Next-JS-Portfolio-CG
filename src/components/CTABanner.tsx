@@ -8,11 +8,10 @@ export function CTABanner({ className }: { className?: string }) {
       style={{ backgroundColor: "rgb(0, 95, 158)" }}
     >
       <div
-        className="mx-auto max-w-7xl"
-        style={{ padding: "32px" }}
+        className="mx-auto max-w-7xl px-5 py-6 md:p-8"
       >
         <h2
-          className="m-0 text-[30px] font-normal leading-[36px] text-white"
+          className="m-0 text-[22px] md:text-[30px] font-normal leading-snug md:leading-[36px] text-white"
         >
           Learn more about my background and experience by downloading my resume.
         </h2>

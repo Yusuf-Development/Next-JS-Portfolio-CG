@@ -103,14 +103,14 @@ export function CategoryTabs() {
   return (
     <section id="projects" className="w-full py-16">
       <div className="mx-auto max-w-[1280px] px-6">
-        <h2 className="mb-4 text-center text-[32px] font-normal leading-tight text-cg-black">
+        <h2 className="mb-4 text-center text-[24px] md:text-[32px] font-normal leading-tight text-cg-black">
           Explore my work across data and ML
         </h2>
         <p className="mb-12 text-center text-base font-normal text-cg-sapphire">
           You can switch between the tabs
         </p>
 
-        <div role="tablist" className="flex">
+        <div role="tablist" className="flex flex-wrap md:flex-nowrap">
           {tabs.map((tab, i) => {
             const isActive = i === activeIndex;
             return (
@@ -121,7 +121,7 @@ export function CategoryTabs() {
                 aria-selected={isActive}
                 aria-controls={`tabpanel-${i}`}
                 onClick={() => setActiveIndex(i)}
-                className={`flex-1 cursor-pointer border-b-4 pb-4 pt-9 text-center text-base font-semibold text-cg-black ${
+                className={`flex-1 basis-1/2 md:basis-auto cursor-pointer border-b-4 pb-3 pt-5 md:pb-4 md:pt-9 text-center text-sm md:text-base font-semibold text-cg-black ${
                   isActive
                     ? "border-cg-sapphire"
                     : "border-[#EFEFEF] hover:bg-[#F0F0F0]"
@@ -151,8 +151,8 @@ export function CategoryTabs() {
                   className="block h-full w-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center gap-4 px-8 py-12">
-                <h3 className="m-0 text-[36px] font-normal leading-snug text-cg-black">
+              <div className="flex flex-col justify-center gap-4 px-5 py-8 md:px-8 md:py-12">
+                <h3 className="m-0 text-[24px] md:text-[36px] font-normal leading-snug text-cg-black">
                   {card.title}
                 </h3>
                 <p className="m-0 text-base leading-6 text-cg-black">

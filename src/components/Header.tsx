@@ -2,7 +2,7 @@ import { GlobeIcon } from "@/components/icons";
 
 export function Header() {
   return (
-    <header className="absolute top-0 left-0 z-3 w-full pt-5 px-[15px]">
+    <header className="absolute top-0 left-0 z-3 w-full pt-5 px-4 md:px-[15px]">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between">
         {/* Logo */}
         <a href="/" aria-label="Yusuf Musa Home">
@@ -10,7 +10,7 @@ export function Header() {
           <img
             src="/images/logo-white-4x.png"
             alt="Yusuf Musa"
-            className="h-[90px] w-auto"
+            className="h-[60px] md:h-[90px] w-auto"
           />
         </a>
 

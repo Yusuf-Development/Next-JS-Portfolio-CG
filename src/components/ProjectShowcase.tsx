@@ -97,12 +97,11 @@ export function ProjectShowcase() {
       {/* Tab Bar */}
       <div className="w-full">
         <ol
-          className="flex list-none overflow-x-auto p-0"
+          className="mx-0 flex list-none overflow-x-auto p-0 md:mx-[116px]"
           role="tablist"
           style={{
             backgroundColor: "rgb(247, 247, 247)",
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 4px 0px",
-            margin: "0 116px",
           }}
         >
           {tabs.map((tab, i) => {
@@ -112,20 +111,18 @@ export function ProjectShowcase() {
                 key={tab.label}
                 role="tab"
                 aria-selected={isActive}
-                className="flex-1"
+                className="flex-1 h-[60px] md:h-[90px]"
                 style={{
                   backgroundColor: isActive ? "rgb(0, 156, 220)" : "transparent",
-                  height: "90px",
                 }}
               >
                 <button
                   type="button"
                   onClick={() => setActiveIndex(i)}
-                  className="flex h-full w-full cursor-pointer items-center justify-center border-none bg-transparent text-[18px] transition-colors"
+                  className="flex h-full w-full cursor-pointer items-center justify-center border-none bg-transparent text-[14px] md:text-[18px] px-3 py-4 md:p-[30px] transition-colors"
                   style={{
                     color: isActive ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)",
                     fontWeight: isActive ? 700 : 600,
-                    padding: "30px",
                   }}
                 >
                   {tab.label}
@@ -150,9 +147,9 @@ export function ProjectShowcase() {
                 className="block h-full w-full object-cover"
               />
             </div>
-            <div className="flex flex-col justify-center gap-4 px-8 py-12">
+            <div className="flex flex-col justify-center gap-4 px-5 py-8 md:px-8 md:py-12">
               <h3
-                className="m-0 text-[36px] font-normal leading-snug"
+                className="m-0 text-[24px] md:text-[36px] font-normal leading-snug"
                 style={{ color: "rgb(0, 0, 0)" }}
               >
                 {card.title}

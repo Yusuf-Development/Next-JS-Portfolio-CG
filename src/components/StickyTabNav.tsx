@@ -72,7 +72,8 @@ export function StickyTabNav() {
 
     const el = document.getElementById(target);
     if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY - 90;
+      const barHeight = window.innerWidth >= 768 ? 90 : 60;
+      const top = el.getBoundingClientRect().top + window.scrollY - barHeight;
       window.scrollTo({ top, behavior: "smooth" });
 
       // Re-enable scroll-spy after scroll settles
@@ -88,12 +89,12 @@ export function StickyTabNav() {
       <div ref={barRef} className="h-0 w-full" />
 
       {/* Spacer to prevent layout jump when bar becomes fixed */}
-      {isSticky && <div className="h-[90px] w-full" />}
+      {isSticky && <div className="h-[60px] md:h-[90px] w-full" />}
 
       {/* Tab bar */}
       <nav
         role="tablist"
-        className={`z-20 mx-auto flex h-[90px] w-full max-w-[1280px] list-none transition-shadow duration-200 ${
+        className={`z-20 mx-auto flex h-[60px] md:h-[90px] w-full max-w-[1280px] list-none transition-shadow duration-200 ${
           isSticky
             ? "fixed top-0 left-1/2 -translate-x-1/2 shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
             : "shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
@@ -109,7 +110,7 @@ export function StickyTabNav() {
               role="tab"
               aria-selected={isActive}
               onClick={() => handleClick(tab.target)}
-              className={`flex flex-1 cursor-pointer items-center justify-center border-none text-[20px] transition-colors duration-200 ${
+              className={`flex flex-1 cursor-pointer items-center justify-center border-none text-[15px] md:text-[20px] transition-colors duration-200 ${
                 isActive
                   ? "bg-cg-ocean font-bold text-white"
                   : "bg-transparent font-normal text-cg-black hover:bg-black/5"

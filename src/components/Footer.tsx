@@ -11,7 +11,7 @@ const bottomLinks = [
 export function Footer({ className }: { className?: string }) {
   return (
     <footer className={cn("w-full", className)}>
-      <div className="px-8" style={{ backgroundColor: "rgb(39, 39, 39)" }}>
+      <div className="px-5 md:px-8" style={{ backgroundColor: "rgb(39, 39, 39)" }}>
         <div className="mx-auto grid max-w-[1280px] gap-6 py-8">
           {/* Copyright */}
           <p className="m-0 text-center text-[16px] font-normal text-white">
@@ -20,22 +20,13 @@ export function Footer({ className }: { className?: string }) {
 
           {/* Bottom links */}
           <nav
-            className="flex flex-wrap items-center justify-center"
-            style={{ gap: "24px 0" }}
+            className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:gap-0 justify-center"
             aria-label="Contact links"
           >
             {bottomLinks.map((link, i) => (
               <span
                 key={link.label}
-                className="flex items-center"
-                style={{
-                  paddingLeft: i > 0 ? "24px" : undefined,
-                  paddingRight: i < bottomLinks.length - 1 ? "24px" : undefined,
-                  borderRight:
-                    i < bottomLinks.length - 1
-                      ? "1.5px solid rgb(146, 146, 146)"
-                      : undefined,
-                }}
+                className="flex items-center sm:border-r sm:last:border-r-0 sm:border-[rgb(146,146,146)] sm:px-6"
               >
                 <a
                   href={link.href}

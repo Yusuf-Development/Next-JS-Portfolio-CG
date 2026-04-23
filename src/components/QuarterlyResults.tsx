@@ -5,18 +5,18 @@ export function QuarterlyResults() {
   return (
     <section id="about" className="w-full py-24">
       <div className="mx-auto max-w-[1280px] px-6">
-        <h3 className="mb-10 text-center text-[36px] font-normal text-cg-black">
+        <h3 className="mb-10 text-center text-[26px] md:text-[36px] font-normal text-cg-black">
           Download my Resume
         </h3>
 
         <div className="relative mx-auto max-w-[853px] overflow-visible bg-cg-ocean py-8 shadow-md">
-          <div className="grid grid-cols-1 items-center gap-8 px-10 md:grid-cols-[290px_1fr]">
+          <div className="grid grid-cols-1 items-center gap-6 px-5 md:gap-8 md:px-10 md:grid-cols-[290px_1fr]">
             {/* Resume thumbnail — offset left to overflow the card */}
             <div className="flex justify-center md:-ml-36">
               <img
                 src="/images/resume.png"
                 alt="Resume first page preview"
-                className="h-[212px] w-[163px] bg-white object-cover shadow-lg"
+                className="h-[160px] w-[123px] md:h-[212px] md:w-[163px] bg-white object-cover shadow-lg"
               />
             </div>
 
@@ -25,7 +25,7 @@ export function QuarterlyResults() {
               <h6 className="text-sm font-normal tracking-wide text-white">
                 CURRICULUM VITAE
               </h6>
-              <h3 className="-mt-2 text-[30px] font-normal leading-snug text-white">
+              <h3 className="-mt-2 text-[22px] md:text-[30px] font-normal leading-snug text-white">
                 A complete overview of my experience, skills, and data science
                 projects
               </h3>
